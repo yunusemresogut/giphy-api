@@ -1,0 +1,27 @@
+<template>
+    <div>
+        <ul>
+            <li v-for="gif in gifs">
+                <img :src="gif.images.fixed_height.url" alt="">
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script>
+export default {
+    props: ['gifs']
+}
+</script>
+
+<style lang="scss">
+    ul {
+
+    }
+
+    li {
+        list-style: none;
+        float: left;
+        margin-right: 10px;
+    }
+</style>
